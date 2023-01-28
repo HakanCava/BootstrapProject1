@@ -1,0 +1,102 @@
+:root {
+  --white: rgb(248, 242, 242);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*! -------------- 1- NAVBAR ---------------- */
+
+.navbar {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container-fluid .navbar-brand {
+  transition: opacity 0.5s;
+}
+
+.container-fluid .navbar-brand:hover {
+  opacity: 0.5;
+}
+
+.nav-link.active {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+.nav-link.active:hover {
+  opacity: 0.5;
+}
+
+/*! ------------- 2- BANNER --------------- */
+
+#banner img {
+  max-height: 100vh;
+  /* max-height: calc(100vh - 60.79px); */
+}
+
+#banner .carousel-caption {
+  bottom: 12rem;
+}
+
+.carousel-caption h4 {
+  color: purple;
+}
+
+/*! ------------- 3- SERVICES --------------- */
+
+.circle {
+  display: flex;
+  width: 10rem !important;
+  margin: auto;
+  height: 10rem !important;
+  border-radius: 50% !important;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*! ------------- OUR TEAM --------------- */
+
+/* main section#Staff img.border.boder-5{
+    border: 5rem !important;
+  } */
+
+/*! ------------- CONTACT --------------- */
+
+section#Contact.container-fluid {
+  background-image: url(./img/map.jpeg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/** -------------- UP-BUTTON ------------------ */
+.btn-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.btn-up:hover {
+  color: black;
+}
+
+.btn-up:hover i {
+  transform: scale(1.2);
+  font-size: 1.4rem;
+}
